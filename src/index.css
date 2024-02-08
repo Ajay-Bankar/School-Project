@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* footer */
+
+.anim:hover{
+    transform: translateY(42px);
+    transition-duration: 1s;
+    cursor: pointer;
+    background-color: red;
+
+}
+/* about Us */
+
+.active{
+    color: red;
+}
