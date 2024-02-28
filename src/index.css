@@ -6,10 +6,10 @@
 /* footer */
 
 .anim:hover{
-    transform: translateY(42px);
+    transform: translateY(-42px);
     transition-duration: 1s;
     cursor: pointer;
-    background-color: red;
+    background-color: white;
 
 }
 /* about Us */
