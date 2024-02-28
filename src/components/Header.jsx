@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
-import { FaBars } from "react-icons/fa";
 import { useState } from "react";
-import { CgClose } from "react-icons/cg";
+
 
 const navData = [
     { title: "Home", linkTo: "" },
@@ -29,13 +28,13 @@ const Header = () => {
             <div className="w-full sm:w-11/12 mx-auto px-3 sm:px-0 py-1 flex justify-between items-center">
                 <img src="./images/big-logo.webp" className="h-[35px] sm:h-full" alt="logo" />
                 <div onClick={()=>setOpen(!open)} className="block sm:hidden text-primary">
-                    {open?<CgClose />:   <FaBars />}
+                    {open?<i class="fa-solid fa-circle-xmark"></i>: <i class="fa-solid fa-bars"></i>}
                  
                 </div>
             </div>
-            <div className="bg-blue-900  text-white">
+            <div className="bg-blue-900   text-white">
                 <nav className="w-11/12 mx-auto">
-                    <ul className={`flex flex-col sm:flex-row gap-x-5 py-2 ${open? "block":"hidden sm:flex"}`}>
+                    <ul className={`flex flex-col sm:flex-row gap-x-10 justify-center py-2 ${open? "block":"hidden sm:flex"}`}>
                         {navData.map((item, i) => (
                             <NavLink to={item.linkTo} key={i}>
                                 <li onClick={()=>setOpen(!open)}>{item.title}</li>

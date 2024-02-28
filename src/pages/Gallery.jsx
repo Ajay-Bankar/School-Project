@@ -6,7 +6,7 @@ const Gallery = () => {
       <div>
         <Banner title="Gallery" />
         <div>
-          <div className=" grid grid-cols-3 gap-10 p-12 rounded-3xl">
+          <div className=" grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-10 p-12 rounded-3xl">
             <img className=" w-[350px] h-[200px] rounded-2xl" src="./images/g1.webp" alt="" />
             <img className=" w-[350px] h-[200px] rounded-2xl" src="./images/g2.webp" alt="" />
             <img className=" w-[350px] h-[200px] rounded-2xl" src="./images/g3.webp" alt="" />

@@ -17,7 +17,7 @@ const Academic = () => {
 
             <button onClick={()=>setChange("foundation")} className={`text-primary border border-primary py-2 ${change==="foundation"?"bg-primary text-white":"text-primary "} `}>THE FOUNDATION YEARS PROGRAMME</button>
             
-            <button onClick={()=>setChange("growing")} className="text-primary border border-primary py-2 ">GROWING YEARS PROGRAMME</button>
+            <button onClick={()=>setChange("growing")} className={` border border-primary py-2 ${change==="growing"?"bg-primary text-white":"text-primary "}`}>GROWING YEARS PROGRAMME</button>
 
           </div>
           <div className=" w-full sm:w-11/12 mx-auto px-3 sm:px-0">

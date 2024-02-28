@@ -22,7 +22,7 @@ const Footer = () => {
 
     <div className=" bg-slate-500">
 
-      <div className="grid grid-cols-3 text-center ">
+      <div className="grid sm:grid-cols-3 text-center ">
         <div className=" gap-3">
           <h2 className="text-secondary text-2xl underline   decoration-gray-400 font-bold mt-5">
             School Address</h2>
